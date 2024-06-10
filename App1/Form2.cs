@@ -40,5 +40,17 @@ namespace App1
             panel1.Controls.Add(frm);
             frm.Show();
         }
+
+        private void listasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            var frm = new Listas();
+            frm.TopLevel = false;
+            frm.AutoScroll = true;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            panel1.Controls.Add(frm);
+            frm.Show();
+        }
     }
 }

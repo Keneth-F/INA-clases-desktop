@@ -98,6 +98,12 @@
     <Compile Include="Forms\ValoresCompuestos.Designer.cs">
       <DependentUpon>ValoresCompuestos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Listas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listas.Designer.cs">
+      <DependentUpon>Listas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ValoresCompuestos.resx">
       <DependentUpon>ValoresCompuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listas.resx">
+      <DependentUpon>Listas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
