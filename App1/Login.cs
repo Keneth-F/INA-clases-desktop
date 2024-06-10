@@ -29,8 +29,8 @@ namespace App1
                 if(Array.Exists(Login.pass, u => u == pass))
                 {
                     var frm = new Form1();
-                    frm.Show();
-                    this.Hide();
+                    frm.ShowDialog();
+                    this.Dispose();
                 }
                 else
                 {
@@ -47,8 +47,8 @@ namespace App1
         private void materialLabel1_Click(object sender, EventArgs e)
         {
             var frm = new CrearCuenta();
-            frm.Show();
-            this.Hide();
+            frm.ShowDialog();
+            this.Dispose();
         }
 
         private void materialTextBox22_Click(object sender, EventArgs e)

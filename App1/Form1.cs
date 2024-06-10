@@ -13,18 +13,18 @@ using MaterialSkin;
 
 namespace App1
 {
-    public partial class Form1 : MaterialForm
+    public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Green400, Primary.Green400,
-                 Primary.Green400,Accent.Green400, TextShade.WHITE
-                );
+            //var materialSkinManager = MaterialSkinManager.Instance;
+            //materialSkinManager.AddFormToManage(this);
+            //materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            //materialSkinManager.ColorScheme = new ColorScheme(
+            //    Primary.Green400, Primary.Green400,
+            //     Primary.Green400,Accent.Green400, TextShade.WHITE
+            //    );
 
         }
 
@@ -37,8 +37,8 @@ namespace App1
 
         private void btnConst_Click(object sender, EventArgs e)
         {
-            var form = new Constantes();
-            form.ShowDialog();
+            Constantes form = new Constantes();
+            form.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -61,6 +61,12 @@ namespace App1
         private void materialButton1_Click(object sender, EventArgs e)
         {
             var form = new Main();
+            form.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var form = new Form2();
             form.ShowDialog();
         }
     }
