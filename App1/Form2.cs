@@ -52,5 +52,9 @@ namespace App1
             panel1.Controls.Add(frm);
             frm.Show();
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

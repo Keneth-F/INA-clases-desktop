@@ -69,5 +69,10 @@ namespace App1
             var form = new Form2();
             form.ShowDialog();
         }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

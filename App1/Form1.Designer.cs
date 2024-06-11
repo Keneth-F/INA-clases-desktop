@@ -37,6 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.button3 = new System.Windows.Forms.Button();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
             // label1
@@ -127,11 +128,32 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // materialButton2
+            // 
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(556, 52);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(158, 36);
+            this.materialButton2.TabIndex = 8;
+            this.materialButton2.Text = "materialButton2";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 516);
+            this.Controls.Add(this.materialButton2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.button1);
@@ -158,6 +180,7 @@
         private System.Windows.Forms.Button button1;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private System.Windows.Forms.Button button3;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
     }
 }
 
