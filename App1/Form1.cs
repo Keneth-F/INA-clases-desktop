@@ -50,12 +50,7 @@ namespace App1
         private void button1_Click_1(object sender, EventArgs e)
         {
             var form = new EstructuraControl();
-            form.ShowDialog();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            this.SaveClose();
         }
 
         private void materialButton1_Click(object sender, EventArgs e)

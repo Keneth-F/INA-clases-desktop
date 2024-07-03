@@ -106,6 +106,7 @@ namespace App1.Forms
         }
         private void button5_Click(object sender, EventArgs e)
         {
+            this.SaveClose();
             if (dataGridView1.SelectedCells[0] != null && !String.IsNullOrEmpty((string)dataGridView1.SelectedCells[0].Value))
             {
                 DialogResult opcionUsuario = MessageBox.Show($"Desea eliminar el dia {dataGridView1.SelectedCells[0].Value}?", "Advertencia", MessageBoxButtons.YesNo);

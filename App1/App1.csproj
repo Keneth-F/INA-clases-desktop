@@ -62,6 +62,7 @@
     <Compile Include="DataTypes.Designer.cs">
       <DependentUpon>DataTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Extensions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
